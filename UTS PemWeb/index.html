@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reservasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Omah Sawah Guest House</h1>
+        <p>Your cozy retreat in the heart of Batu City</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card-container">
+                <div class="left">
+                    <div class="left-container">
+                        <h2>Omah Sawah <br> Guest House</h2>
+                        <br>
+                        <p>+6285432345564</p>
+                        <br>
+                        <p>@omahsawahguesthouse.official</p>
+                        <br>
+                        <p>Dsn.Junrejo, Kecamatan Pendem, Kota Batu</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-container">
+                        <form id="contactForm" method="post" action="submit.php">
+                            <h2 class="lg-view">Reservation Form</h2>
+                            <input type="text" id="nama" name="nama" placeholder="Name" required>
+                            <input type="tel" id="telepon" name="telepon" placeholder="Phone" autocomplete="off" required>
+                            <h3>Check-in</h3>
+                            <input type="date" name="checkin" id="checkin" placeholder="Check-In" required>
+                            <h3>Check-out</h3>
+                            <input type="date" name="checkout" id="checkout" placeholder="Check-Out" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input list="kamar" name="kamar" placeholder="Room Type">
+                            <datalist id="kamar">
+                                <option value="" disabled selected>Select Room Type</option>
+                                <option value="King Size Room">
+                                <option value="Queen Size Room">
+                            </datalist>
+                            <input type="number" name="jumlah" id="jumlah" placeholder="Number of Rooms">
+                            <textarea id="pesan" name="pesan" rows="10" placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Omah Sawah Guest House. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

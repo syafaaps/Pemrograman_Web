@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #105f33;
+    color: #fff;
+    text-align: center;
+    padding: 100px ;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); 
+}
+
+.card-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    flex: 1;
+    background-color: #368a56;
+    color: #fff;
+    padding: 50px;
+}
+
+.right {
+    flex: 1;
+    padding: 50px;
+}
+
+.left-container {
+    text-align: center;
+
+}
+.left-container h2 {
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.left-container p {
+    font-size: 18px;
+}
+
+.right-container input,
+.right-container textarea,
+.right-container button {
+    margin-bottom: 20px;
+}
+
+.right-container input[type="text"],
+.right-container input[type="tel"],
+.right-container input[type="date"],
+.right-container input[type="email"],
+.right-container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right-container input[type="number"] {
+    width: 50%;
+}
+
+.right-container textarea {
+    height: 120px;
+}
+
+.right-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #105f33;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-container button:hover {
+    background-color: #0d4424;
+}
+
+footer {
+    background-color: #105f33;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
